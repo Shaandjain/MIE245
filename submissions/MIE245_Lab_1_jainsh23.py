@@ -37,12 +37,11 @@ class LinkedList:
         #iterate through linked list while current node is  not None
         while curr is not None: 
             if curr.value == value:
-                return True
+                return curr
             #move to the next node
             curr = curr.next
-        return False
-        
-        return
+        return None
+    
 
     def delete_node_by_value(self, value):
         """ Deletes a Node with Value in the LinkedList. 
